@@ -1,11 +1,12 @@
-package diccionario;
+package Tarea09Java;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class diccionario {
+public class Tarea09Java {
 
 	public static void main(String[] args) {
+		
 		/*
 		 * Instrucciones:
 
@@ -63,8 +64,9 @@ Para ayudarte puedes desarrollar un algoritmo y el pseudocódigo.
 	      if (!spanish.equals("salir")) { 
 	        if (transl.containsKey(spanish)) { 
 	          System.out.println("La traducción de " + spanish);
-	          System.out.print(" es " + transl.get(spanish)); 
+	          System.out.println(" es " + transl.get(spanish)); 
 	        } else {
+	        	//System.out.println("La palabra no se encuentra en el diccionario");
 	          System.out.print("No conozco la respuesta ");
 	          System.out.print("¿Cuál es la traducción de " + spanish + "?: ");
 	          String english = s.nextLine();
@@ -76,4 +78,5 @@ Para ayudarte puedes desarrollar un algoritmo y el pseudocódigo.
 	     s.close();
 				
 	}
+
 }
